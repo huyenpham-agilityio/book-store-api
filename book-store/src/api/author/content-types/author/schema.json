@@ -28,10 +28,10 @@
     "publicationDate": {
       "type": "date"
     },
-    "authors": {
+    "genres": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::author.author"
+      "target": "api::genre.genre"
     }
   }
 }

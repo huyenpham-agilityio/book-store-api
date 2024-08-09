@@ -805,10 +805,10 @@ export interface ApiAuthorAuthor extends Schema.CollectionType {
     country: Attribute.String;
     language: Attribute.String;
     publicationDate: Attribute.Date;
-    authors: Attribute.Relation<
+    genres: Attribute.Relation<
       'api::author.author',
       'oneToMany',
-      'api::author.author'
+      'api::genre.genre'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
