@@ -855,6 +855,7 @@ export interface ApiBookBook extends Schema.CollectionType {
       'oneToOne',
       'api::author.author'
     >;
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
